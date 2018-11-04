@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+const meow = require('meow');
+
+const cli = meow(
+  `
+        Usage
+        $ hrg <input>
+        Options
+          --out, -o      Output file name. Default: manifest.json
+          --prefix, -p   Add prefix to the path of external resources
+          --help, -h     show help
+          --version      show version
+        Examples
+          $ hrg index.html -o manifest.json`,
+  {
+    flags: {
+      out: {
+        type: 'string',
+        alias: 'o',
+        default: 'manifest.json'
+      },
+      prefix: {
+        type: 'string',
+        alias: 'p',
+        default: ''
+      }
+    }
+  }
+);
+
+const file = cli.input[0];
+if (!file) {
+  cli.showHelp(1);
+}
+
+require('..')(cli.input[0], cli.flags.out, cli.flags.prefix);

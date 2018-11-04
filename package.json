@@ -1,0 +1,30 @@
+{
+  "name": "html-resource-generator",
+  "version": "0.1.0",
+  "author": "chang liu <3dslayer@gmail.com>",
+  "description": "A CLI tool that extract style and script resources from html",
+  "license": "MIT",
+  "homepage": "https://github.com/changLiuUNSW/html-resource-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changLiuUNSW/html-resource-generator.git"
+  },
+  "bugs": "https://github.com/changLiuUNSW/html-resource-generator/issues",
+  "keywords": [
+    "html",
+    "resource",
+    "hrg",
+    "manifest"
+  ],
+  "main": "index.js",
+  "bin": {
+    "hrg": "bin/hrg"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^7.0.0",
+    "meow": "^5.0.0"
+  }
+}
