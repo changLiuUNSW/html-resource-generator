@@ -14,14 +14,14 @@
     "html",
     "resource",
     "hrg",
-    "manifest"
+    "manifest",
+    "cli"
   ],
-  "main": "index.js",
+  "main": "./index.js",
   "bin": {
     "hrg": "bin/hrg"
   },
   "scripts": {},
-  "devDependencies": {},
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^7.0.0",
