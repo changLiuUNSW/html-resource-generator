@@ -13,16 +13,16 @@ module.exports = (html, output, prefix) => {
   $('link[rel="stylesheet"]').each(function(i, elem) {
     let style = $(elem).attr('href');
     if (style) {
-      result.styles.push({ type: 'external', value: prefix + style });
+      result.styles.push({ inline: false, value: prefix + style });
     }
   });
 
   $('script').each(function(i, elem) {
     const script = $(elem).attr('src');
     if (script) {
-      result.scripts.push({ type: 'external', value: prefix + script });
+      result.scripts.push({ inline: false, value: prefix + script });
     } else {
-      result.scripts.push({ type: 'inline', value: $(elem).html() });
+      result.scripts.push({ inline: true, value: $(elem).html() });
     }
   });
 

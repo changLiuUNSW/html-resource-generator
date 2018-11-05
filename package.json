@@ -1,6 +1,6 @@
 {
   "name": "html-resource-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "chang liu <3dslayer@gmail.com>",
   "description": "A CLI tool that extract style and script resources from html",
   "license": "MIT",

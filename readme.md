@@ -54,14 +54,14 @@ Assume we have `index.html` like this:
 ```json
 {
   "styles": [
-    { "type": "external", "value": "/client/dist/styles.d1f7c9f576103c62cb95.bundle.css" }
+    { "inline": false, "value": "/client/dist/styles.d1f7c9f576103c62cb95.bundle.css" }
   ],
   "scripts": [
     {
-      "type": "inline",
+      "inline": true,
       "value": "\n        function inline() {\n            console.log('inline');\n        }\n    "
     },
-    { "type": "external", "value": "/client/dist/main.c2e1bcb424c7762ae48a.bundle.js" }
+    { "inline": false, "value": "/client/dist/main.c2e1bcb424c7762ae48a.bundle.js" }
   ]
 }
 ```
@@ -71,14 +71,14 @@ Assume we have `index.html` like this:
 ```json
 {
   "styles": [
-    { "type": "external", "value": "myapp/client/dist/styles.d1f7c9f576103c62cb95.bundle.css" }
+    { "inline": false, "value": "myapp/client/dist/styles.d1f7c9f576103c62cb95.bundle.css" }
   ],
   "scripts": [
     {
-      "type": "inline",
+      "inline": true,
       "value": "\n        function inline() {\n            console.log('inline');\n        }\n    "
     },
-    { "type": "external", "value": "myapp/client/dist/main.c2e1bcb424c7762ae48a.bundle.js" }
+    { "inline": false, "value": "myapp/client/dist/main.c2e1bcb424c7762ae48a.bundle.js" }
   ]
 }
 ```
