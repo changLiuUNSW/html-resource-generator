@@ -49,7 +49,7 @@ Assume we have `index.html` like this:
 </html>
 ```
 
-`htg index.html -o manifest.json` gives following ```manifest.json```.
+`hrg index.html -o manifest.json` gives following ```manifest.json```.
 
 ```json
 {
@@ -66,7 +66,7 @@ Assume we have `index.html` like this:
 }
 ```
 
-`htg index.html -o manifest.json -p myapp` gives following ```manifest.json```.
+`hrg index.html -o manifest.json -p myapp` gives following ```manifest.json```.
 
 ```json
 {
